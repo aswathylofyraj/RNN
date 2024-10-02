@@ -3,7 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the trained model
-model = tf.keras.models.load_model('C:/Users/USER/OneDrive/Desktop/deeplearning/deep-learning/RNN/results/result/spam_model.keras')
+model = tf.keras.models.load_model('spam_model.keras')
 
 # Function to preprocess input using the tokenizer from the training phase
 def preprocess_text(text, tokenizer, max_length=10):
